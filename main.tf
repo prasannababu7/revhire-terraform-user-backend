@@ -179,7 +179,7 @@ resource "aws_codebuild_project" "revhire-user-build" {
 }
 
 resource "aws_iam_role" "codepipeline_role" {
-  name = "codepipeline-service-role"
+  name = "codepipeline-service-role-user"
 
   assume_role_policy = jsonencode({
     Version = "2012-10-17",
